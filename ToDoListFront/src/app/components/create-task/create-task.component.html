@@ -1,0 +1,15 @@
+<div class="add-new-task">
+  <h2>Add new Task</h2>
+  <form (ngSubmit)="addTask()">
+    <input [(ngModel)]="newTask.name" type="text" name="name" placeholder="Name" required />
+    <select [(ngModel)]="newTask.status" name="status" id="">
+        <option value="Completed">Completed</option>
+        <option value="Not Completed">Not Completed</option>
+    </select>
+
+    <div class="controls">
+      <button type="submit">Add</button>
+      <button (click)="cancelTask()" type="button">Cancel</button>
+    </div>
+  </form>
+</div>

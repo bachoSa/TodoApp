@@ -1,0 +1,26 @@
+<div *ngIf="tasks.length > 0; else noTasksMessage">
+  <div class="tasksListComponent" *ngFor="let task of tasks; let i = index">
+    <ul id="{{ task.id }}">
+      <li>
+        <input [(ngModel)]="task.name" type="text" class="Name" />
+      </li>
+      <li>
+        <input
+          [(ngModel)]="task.status"
+          type="text"
+          class="status"
+          readonly
+          (click)="toggleStatus(task)"
+        />
+      </li>
+    </ul>
+    <div class="controls">
+      <button (click)="updateTask(task)">Update</button>
+      <button (click)="deleteTask(task.id)">Delete</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #noTasksMessage>
+  <div class="no-tasks-available">No tasks available. Add Tasks!</div>
+</ng-template>

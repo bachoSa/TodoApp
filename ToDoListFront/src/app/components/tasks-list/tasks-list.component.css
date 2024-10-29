@@ -1,0 +1,63 @@
+.tasksListComponent{
+    display: flex;
+    border: 1px solid #ccc;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    justify-content: space-between;
+    max-width: 60%;
+    padding: 1rem;
+    margin: 1rem auto;
+    align-items: center;
+}
+
+.tasksListComponent ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+   
+
+}
+.tasksListComponent li{
+    margin-left:1rem;
+}
+
+  
+  .tasksListComponent input {
+    text-align: center;
+  }
+  .tasksListComponent .status{
+    max-width: 150px;
+    background-color: rgb(252, 252, 122);
+    cursor: pointer;
+  }
+  .tasksListComponent .name{
+    max-width: 600px;
+  }
+  .tasksListComponent input[type="text"],
+  .tasksListComponent input[type="number"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .tasksListComponent input[type="text"]:focus,
+  .tasksListComponent input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .no-tasks-available{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }

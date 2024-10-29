@@ -1,0 +1,57 @@
+/* Styles for the Add New Employee form */
+.add-new-task {
+  max-width: 1140px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.add-new-task h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-new-task form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.add-new-task input {
+  max-width: 350px;
+  margin-right: 1rem;
+}
+.add-new-task select {
+  max-width: 150px;
+}
+
+.add-new-task input,
+.add-new-task select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.add-new-task input:focus,
+.add-new-task select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.add-new-task input::placeholder {
+  color: #999;
+}
+.add-new-task .controls {
+  display: flex;
+  justify-content: center;
+}
+
+.add-new-task .controls button {
+  margin-left: 1rem;
+}
